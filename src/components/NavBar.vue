@@ -16,6 +16,10 @@ const title = computed(() => {
     return ''
   return route.meta.i18n ? t(route.meta.i18n) : route.meta.title
 })
+
+const showLeftArrow = computed(() => {
+  return !(!route.meta || route.meta.hideLeftArrow)
+})
 </script>
 
 <template>
@@ -23,7 +27,8 @@ const title = computed(() => {
     v-show="title"
     :title="title"
     :fixed="true"
-    clickable left-arrow
+    clickable
+    :left-arrow="showLeftArrow"
     @click-left="onBack"
   />
 </template>

@@ -7,6 +7,9 @@ definePage({
   name: 'main',
   meta: {
     level: 1,
+    title: '首页', // 不加此属性，导航栏不显示
+    i18n: 'home.title',
+    hideLeftArrow: true,
   },
 })
 
