@@ -24,3 +24,8 @@ pnpm dev
 ```
 pnpm build
 ```
+
+### Lints and fixes files
+```
+pnpm lint:fix
+```
