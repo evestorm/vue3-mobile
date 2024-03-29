@@ -45,6 +45,7 @@ const menuItems = computed(() => ([
   { title: t('home.echartsDemo'), route: 'charts' },
   { title: t('home.unocssExample'), route: 'unocss' },
   { title: t('home.persistPiniaState'), route: 'counter' },
+  { title: t('home.demo'), route: 'demo' },
   { title: t('home.404Demo'), route: 'unknown' },
 ]))
 </script>
